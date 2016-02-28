@@ -1,0 +1,43 @@
+= Wirtschaftsportalverbund (WPV) Testföderation (Home)
+
+.Zweck
+Zweck der Testfedertion ist die Interoperabilität und Konformität von SPs und (sekundär auch) IdPs
+zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit PVP2 getestet werden
+können, Konfigurationsprobleme erkannt werden bevor eine Instanz in den Produktionsbetrieb
+eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
+
+.Referenzen
+Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
+
+- http://reference.e-government.gv.at/fileadmin/user_upload/PVP2-S-Profil_2-1-2_20150601.pdf [PVP V2 S-Profil V2.1.2 ]
+- http://reference.e-government.gv.at/fileadmin/_migrated/content_uploads/TOP5_-_PVP2-S-MD-2.1.0_spec_DE_01.pdf [PVP2 SAML Metadaten Management Spezifikation V2.1.0]
+- WPV Attribut Profil: noch nicht veröffentlicht
+
+
+.Testmöglichkeiten
+
+* Erstellen und validieren von Metadaten
+* Einbindung eines IDP oder SP in die Testfederation (= Aufnahme des EntityDescriptors in die Metadaten)
+* IDPs
+  ** Aufnahme in das IDP Discovery Service (implizit über die Metadaten)
+  ** Einfacher Funktionstest mit dem Echoservice
+* SPs
+  ** Verwendung des zentralen IDP Discovery Service
+  ** Einfacher Funktionstest mit den Test-IDP
+
+.How-To
+link:how-to-SP.html[SP zur Testfederation hinzufügen]
+
+
+.Dienste
+
+|====================
+|Metadatenverwaltung | per email
+|Metadatenvalidierung | http://mdval.test.portalverbund.gv.at/
+|Metadatenpublikation |http://mdfeed.test.wpv.portalverbund.at/
+|IDP Discovery Service |https://disco.test.wpv.portalverbund.at
+|Echo-Service SP mit IdP discovery service | https://echo.test.wpv.portalverbund.at/secure/echo.php
+|Echo-Service SP (Request Initiation Protocol idp5) | https://echo.test.wpv.portalverbund.at/Shibboleth.sso/Login?target=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsecure%2Fecho.php&entityID=https%3A%2F%2Fidp5.test.wpv.portalverbund.at%2Fidp.xml
+|(Self-Service IdP) | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
+|====================
+

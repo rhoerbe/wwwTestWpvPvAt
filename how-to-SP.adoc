@@ -1,0 +1,33 @@
+= Wirtschaftsportalverbund (WPV) Testföderation
+== Einbinden eines Service Providers
+
+zur Testfederation erfolgt mittels folgender Schritte:
+
+. Export der Metadaten des SP. Dabei ist zu prüfen, dass die Metadaten den Anforderungen genügen.
+  Die automatisch generierten Metadaten sind fast immer unzureichend. Beispiele für korrekte
+  Metadaten sind die Entites für idp5.test.wpv.portalverbund.at (IDP) und
+  echo.test.wpv.portalverbund.at (SP). Man findes Sie mit der Suchfunktion im MDX-Service.
+. Validierung der Metadaten gegen XSD und Schematron-Regeln.
+. Korrigieren der Metadaten und Wiederholung der Schritte 1 und 2 bis alle Mängel behoben sind.
+. Hochladen in die https://mdreg.test.wpv.portalverbund.at[Metadatenregistry]. Derzeit per Mail an
+  webmaster@wpv.portalverbund.at .
+. Überprüfen ob die Metadaten korrekt im Metadatenfeed erscheinen.
+. Konfigurieren des SP, dass die Metadaten regelmäßig vom MD-Feed der Testfederation bezogen werden
+  (http://md.test.wpv.portalverbund.at/testfed-metadata.xml). Wird das vom Produkt nicht unterstützt,
+  so ist mittles Scripts zu realisieren, dass Download, Signaturprüfung und Import automatisch
+ erfolgen. (Z.B. FEMMA für ADFS)
+. Eintragen des IdP-Discovery Service in der lokalen SP-Konfiguration. Die Adresse ist
+  https://disco.test.wpv.portalverbund.at/role/idp.ds. Achtung! Das Protokoll ist das SAMLDS
+  protokoll, nicht das auf Common Cookies basierende IDP Discovery Profile. Der Aufruf erfolgt über
+  einen URL mit folgenden Komponenten:
+** Hostname + Pfad: https://disco.test.wpv.portalverbund.at/role/idp.ds
+** entityID-Parameter: enthält URL-codierte entityID
+** Return-Pfad: enthält URL-codierte Rückgabeadresse
+  Beispiel: /role/idp.ds?entityID=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsp.xml&return=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A52889d0c6e0396b95f185a65ea888327cabbc23be0657f92544ee43a98d9ca37
+. Zum Abschluss sind die Metadaten der eigenen Entity herunterzuladen
+  (https://mdx.text.wpv.portalverbund.at) und unter dem EntityDescriptor (als URL) veröffentlichen.
+. Einfacher Test eines SP-initiated Logins mit idp5.test.wpv.portalverbund.at. Anmeldung mit
+  test@hanstest.at /test.
+
+
+link:home.html[Home]
