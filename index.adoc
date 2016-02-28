@@ -33,7 +33,7 @@ link:how-to-SP.html[SP zur Testfederation hinzufügen]
 
 |====================
 |Metadatenverwaltung | per email
-|Metadatenvalidierung | http://mdval.test.portalverbund.gv.at/
+|Metadatenvalidierung | http://mdval.test.portalverbund.at/
 |Metadatenpublikation |http://mdfeed.test.wpv.portalverbund.at/
 |IDP Discovery Service |https://disco.test.wpv.portalverbund.at
 |Echo-Service SP mit IdP discovery service | https://echo.test.wpv.portalverbund.at/secure/echo.php
