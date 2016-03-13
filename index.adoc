@@ -11,7 +11,7 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 
 - http://reference.e-government.gv.at/fileadmin/user_upload/PVP2-S-Profil_2-1-2_20150601.pdf [PVP V2 S-Profil V2.1.2 ]
 - http://reference.e-government.gv.at/fileadmin/_migrated/content_uploads/TOP5_-_PVP2-S-MD-2.1.0_spec_DE_01.pdf [PVP2 SAML Metadaten Management Spezifikation V2.1.0]
-- WPV Attribut Profil: noch nicht veröffentlicht
+- link:WPV-Attribute.pdf [WPV Attribute Standardprofil (Entwurf)]
 
 
 .Testmöglichkeiten
@@ -32,12 +32,11 @@ link:how-to-SP.html[SP zur Testfederation hinzufügen]
 .Dienste
 
 |====================
-|Metadatenverwaltung | per email
+|Metadatenverwaltung | Anfrage an Webmaster at wirtschaftsportalverbund.at
 |Metadatenvalidierung | http://mdval.test.portalverbund.at/
 |Metadatenpublikation |http://mdfeed.test.wpv.portalverbund.at/
-|IDP Discovery Service |https://disco.test.wpv.portalverbund.at
-|Echo-Service SP mit IdP discovery service | https://echo.test.wpv.portalverbund.at/secure/echo.php
-|Echo-Service SP (Request Initiation Protocol idp5) | https://echo.test.wpv.portalverbund.at/Shibboleth.sso/Login?target=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsecure%2Fecho.php&entityID=https%3A%2F%2Fidp5.test.wpv.portalverbund.at%2Fidp.xml
-|(Self-Service IdP) | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
+|SP1 Echo-Service mit fix eingestelltem IdP | https://sp1.test.wpv.portalverbund.at/secure/echo_wpv.php
+|SP2 Echo-Service mit IdP discovery service und Request Initiation Protocol | https://sp2.test.wpv.portalverbund.at/Shibboleth.sso/Login?target=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsecure%2Fecho.php&entityID=https%3A%2F%2Fidp1.test.wpv.portalverbund.at%2Fidp/shibboleth
+|Test IdP | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
 |====================
 
