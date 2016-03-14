@@ -6,18 +6,6 @@ zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit 
 können, Konfigurationsprobleme erkannt werden bevor eine Instanz in den Produktionsbetrieb
 eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
 
-.Referenzen
-Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
-
-++++
-<ul><li>
-<a href="http://reference.e-government.gv.at/fileadmin/user_upload/PVP2-S-Profil_2-1-2_20150601.pdf">PVP V2 S-Profil V2.1.2</a>
-</li><li>
-<a href="http://reference.e-government.gv.at/fileadmin/_migrated/content_uploads/TOP5_-_PVP2-S-MD-2.1.0_spec_DE_01.pdf">PVP2 SAML Metadaten Management Spezifikation V2.1.0</a>
-</li><li>
-<a href="WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
-</li><ul>
-+++++
 
 .Testmöglichkeiten
 
@@ -45,7 +33,17 @@ link:how-to-SP.html[SP zur Testföderation hinzufügen]
 |Test IdP | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
 |====================
 
+.Referenzen
+Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
+
 ++++
+<ul><li>
+<a href="http://reference.e-government.gv.at/fileadmin/user_upload/PVP2-S-Profil_2-1-2_20150601.pdf">PVP V2 S-Profil V2.1.2</a>
+</li><li>
+<a href="http://reference.e-government.gv.at/fileadmin/_migrated/content_uploads/TOP5_-_PVP2-S-MD-2.1.0_spec_DE_01.pdf">PVP2 SAML Metadaten Management Spezifikation V2.1.0</a>
+</li><li>
+<a href="WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
+</li><ul>
 <hr>
-<img src="logo.png">
+<img src="logo.png" style="text-align: center;">
 ++++
