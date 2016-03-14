@@ -43,7 +43,7 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 <a href="http://reference.e-government.gv.at/fileadmin/_migrated/content_uploads/TOP5_-_PVP2-S-MD-2.1.0_spec_DE_01.pdf">PVP2 SAML Metadaten Management Spezifikation V2.1.0</a>
 </li><li>
 <a href="WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
-</li><ul>
+</li></ul>
 <hr>
-<img src="logo.png" style="text-align: center;">
+<img src="logo.png" style="display: block; margin-left: auto; margin-right: auto;">
 ++++
