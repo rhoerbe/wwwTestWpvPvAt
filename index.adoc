@@ -41,7 +41,7 @@ link:how-to-SP.html[SP zur Testfederation hinzufüge≠n]
 |Metadatenvalidierung | http://mdval.test.portalverbund.at/
 |Metadatenpublikation |http://mdfeed.test.wpv.portalverbund.at/
 |SP1 Echo-Service mit fix eingestelltem IdP | https://sp1.test.wpv.portalverbund.at/secure/echo_wpv.php
-|SP2 Echo-Service mit IdP discovery service und Request Initiation Protocol | https://sp2.test.wpv.portalverbund.at/Shibboleth.sso/Login?target=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsecure%2Fecho.php&entityID=https%3A%2F%2Fidp1.test.wpv.portalverbund.at%2Fidp/shibboleth
+|SP2 Echo-Service mit IdP discovery service und Request Initiation Protocol | https://sp2.test.wpv.portalverbund.at:4443/Shibboleth.sso/Login?target=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsecure%2Fecho.php&entityID=https%3A%2F%2Fidp1.test.wpv.portalverbund.at%2Fidp/shibboleth
 |Test IdP | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
 |====================
 
