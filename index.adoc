@@ -44,5 +44,5 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 </li><li>
 <a href="WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
 </li></ul>
-<img src="logo.png" style="display: block; margin-top 2em; margin-left: auto; margin-right: auto; width: 200px;">
+<img src="logo.png" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
 ++++
