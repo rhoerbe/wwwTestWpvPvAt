@@ -1,5 +1,6 @@
+image::logo.png
 = Wirtschaftsportalverbund (WPV) Testföderation (Home)
-
+'''
 .Zweck
 Zweck der Testfedertion ist die Interoperabilität und Konformität von SPs und (sekundär auch) IdPs
 zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit PVP2 getestet werden
