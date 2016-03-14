@@ -31,7 +31,7 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
   ** Einfacher Funktionstest mit den Test-IDP
 
 .How-To
-link:how-to-SP.html[SP zur Testfederation hinzufüge≠n]
+link:how-to-SP.html[SP zur Testföderation hinzufügen]
 
 
 .Dienste
