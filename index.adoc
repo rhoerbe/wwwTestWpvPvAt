@@ -33,6 +33,15 @@ link:how-to-SP.html[SP zur Testföderation hinzufügen]
 |Test IdP | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
 |====================
 
+.Metadaten-Feed
+
+Die Metadaten sind regelmäßig (im Produktionsbetrieb z.B. stündlich doer täglich) vom 
+Feed zu laden. Dann ist die Signatur zu prüfen und der IDP oder SP bei Änderungen zu 
+aktualisieren. Die Metadaten sind mit folgendem Zertifikat signiert:
+metadata_crt.pem
+link:metadata_crt.pem[MD Signaturzertifikat]
+
+
 .Referenzen
 Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 
@@ -44,5 +53,5 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 </li><li>
 <a href="WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
 </li></ul>
-<img src="logo.png" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
+<img src="images/logo.png" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
 ++++
