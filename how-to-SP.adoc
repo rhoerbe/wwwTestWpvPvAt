@@ -30,4 +30,4 @@ zur Testfederation erfolgt mittels folgender Schritte:
   test@hanstest.at /test.
 
 
-link:home.html[Home]
+link:index.html[Home]
