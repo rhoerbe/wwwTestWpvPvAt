@@ -31,6 +31,7 @@ link:how-to-SP.html[SP zur Testföderation hinzufügen]
 |SP1 Echo-Service mit fix eingestelltem IdP | https://sp1.test.wpv.portalverbund.at/
 |SP2 Echo-Service mit IdP Discovery Service | https://sp2.test.wpv.portalverbund.at:4443/
 |Test IdP | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
+|Log Viewer | https://weblog.test.wpv.portalverbund.at/
 |====================
 
 .Metadaten-Feed
