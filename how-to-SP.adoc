@@ -6,7 +6,7 @@ zur Testfederation erfolgt mittels folgender Schritte:
 * Export der Metadaten des SP. Dabei ist zu prüfen, dass die Metadaten den Anforderungen genügen.
   Die automatisch generierten Metadaten sind fast immer unzureichend. Beispiele für korrekte
   Metadaten sind die Entities für https://mdfeed.test.wpv.portalverbund.at/unsigned/idp1TestWpvPortalverbundAt_idpShibboleth/ed.xml[idp1.test.wpv.portalverbund.at] (IDP) und
-  https://mdfeed.test.wpv.portalverbund.at/unsigned/sp1TestWpvPortalverbundAt_idpShibboleth/ed.xml[sp1.test.wpv.portalverbund.at] (SP). Man findes Sie mit der Suchfunktion im MDX-Service.
+  https://mdfeed.test.wpv.portalverbund.at/unsigned/sp1TestWpvPortalverbundAt_spXml/ed.xml[sp1.test.wpv.portalverbund.at] (SP). Man findes Sie mit der Suchfunktion im MDX-Service.
   Typische Mängel sind:
   ** entityID ist kein URI (beginnt nicht mit http://, https:// oder urn://)
   ** Fehlende EntitityCategory: Welche Attribute zwischen IDP und SP ausgetauscht werden wird über die EntityCategory angegeben, das ist derzeit 
