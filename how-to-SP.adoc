@@ -10,7 +10,7 @@ zur Testfederation erfolgt mittels folgender Schritte:
   Typische Mängel sind:
   ** entityID ist kein URI (beginnt nicht mit http://, https:// oder urn://)
   ** Fehlende EntitityCategory: Welche Attribute zwischen IDP und SP ausgetauscht werden wird über die EntityCategory angegeben, das ist derzeit 
-     nur http://wirtschaftsportalverbund.at/ns/ec/attributebundle-wkis. Andere Attributangaben in den Metadaten sind nicht maßgeblich und sollten daher entfernt werden.
+     nur \http://wirtschaftsportalverbund.at/ns/ec/attributebundle-wkis. Andere Attributangaben in den Metadaten sind nicht maßgeblich und sollten daher entfernt werden.
   ** In den mdui: Elementen sind sinnvolle Angaben zu ergänzen, um automatisches IDP- und Service Discovery zu steuern.
   ** In den alg: Elementen sind die tatsächlich erlaubten Krypto-Algorithmen anzugeben (abhängig von der Konfiguration)
 * Validierung der Metadaten gegen XSD und Schematron-Regeln.
