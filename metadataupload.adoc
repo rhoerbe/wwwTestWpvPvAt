@@ -10,13 +10,13 @@ werden per EMail an fo@wpv.portalverbund.at gesendet.
 
 == Testföderation (Staging: QSS und Produktion)
 
-Die Übermittleun der Metadaten erfolt wie in der Testumgebung, zusätzlich gelten für
+Die Übermittlung der Metadaten erfolgt wie in der Testumgebung, zusätzlich gelten für
 QSS und Produktion noch weitere Sicherheitsprozeduren:
 
 1. Die Metadaten werden nur von persönlich bekannten oder schriftlich autorisierten
 Personen entgegen genommen.
 2. Für die elektronische Übertragung sind die Daten zu signieren oder
 gleichwertig zu sichern. Dafür stehen folgende Alternativen zur Verfügung:
- - XADES Signatur mit der Bürgerkarte (SmartCard. Client: http://github.com/identinetics/pvzdlivecd)
+ - XADES Signatur mit der Bürgerkarte (nur mit Karte, keine Handysignature; Client: http://github.com/identinetics/pvzdlivecd)
  - MD5 oder SHA1 Hash von der Datei erzeugen und diesen telefonisch oder per SMS übermitteln
- - MD5 oder SHA1 Hash persönlich ausgedruck bei einem Meeting übergeben.
+ - MD5 oder SHA1 Hash ausgedruckt bei einem Meeting persönlich übergeben.
