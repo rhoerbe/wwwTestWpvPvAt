@@ -1,0 +1,27 @@
+= WPV Begriffe
+
+Definitionen ausgewählter Begriffe aus dem WPV Rulebook und aus der SAML Spezifikation.
+
+
+[width="100%", cols="3,20,60"]
+|===
+| Rulebook /SAML | Term | Definition
+| 1.1     | Assertion | Eine Assertion ist die Bestätigung von Identität und/oder Attributen eines Principals durch einen Verifier. Ein Verifier ist der technische Agent eines IdP.
+| 1.2 | Attribut | Attribute sind Angaben über einen Benutzer, die diesem eindeutig zugeordnet werden können.
+| SAML | Attribut | Im SAML-Profil durch eine URI eindeutig definierte Datenstruktur.
+| 1.5 | Benutzer | Benutzer oder ihre Geräte benötigen Zugriff auf ein Service und sind dafür bei einem IdP registriert. Der Begriff wird hier synonym für Principal verwendet, und umfasst sinngemäß auch Entitäten, die keine Personen sind.
+| SAML | Entity | Entity ist der Überbegriff für IdP und SP.
+| SAML | EntityCategory | Eigenschaft eines SP, mit dem die vom IdP angeforderten Attribute publiziert werden. Die Definition ist im Dokument „WPV Attribute Standardprofil“ enthalten.
+| SAML | EntityDescriptor | XML-Dokument, das jene Eigenschaften einer Entity enthält, mit denen andere Entities die Kommunikation automatisch einrichten können. Das sind eindeutige Bezeichnung (entityID), Zertifikate, Kommunikations-endpunkte etc. Im WPV muss der EntityDescriptor immer über den Metadata Aggregator übermittelt werden. Eine direkte Übermittlung ist unzulässig.
+| 1.13 | Federation | Eine Federation ist eine Gemeinschaft von Entitäten, die ein gemeinsames Interesse an der Organisation von vertrauenswürdiger elektronischer Kommunikation haben und sich zu diesem Zweck zusammengeschlossen haben. Diese Gemeinschaften können auf einen gemeinsamen Markt bezogen sein, und ihre Mitgliedschaft in diesem Sinn beschränken. Es kann aber auch andere Gründe für ein gemeinsames Interesse geben, etwa die geographische Region oder andere Geschäftsbeziehungen. (Zum Begriff „Identity Federation“ als theoretisches Konzept siehe dort.)
+| 1.15 | Federation Operator | Der Federation Operator betreibt die zentralen Dienste der Federation. Diese Dienste umfassen (Auszug): (a) Registrierung und Publikation der Metadaten der Federation; (b) Sammeln von Breach Notifcations. (c) Betrieb eines IdP Discovery Service und Account Selectors (optional);
+| 1.19 | Identity Federation | Identity Federation ist das Konzept der organisationsübergreifenden Nutzung elektronischer Identitäten.
+| 1.20 | Identity Provider | Der Identity Provider (IdP) gewährleistet die eindeutige und überprüfbare Identität einer Entität (natürliche Person, Organisation, Device) und vermittelt zugehörige Attribute. Die dafür notwendigen Teilfunktionen für Registrierung, Bereitstellung von Credentials und Attributen sind vom IdP intern zu verwalten.
+| 1.21 | IdP-Discovery-Service | Der IdP-Discovery-Service bietet die Auswahl des IdP im Zuge der Authentifizierung. Es gibt zwei Ausprägungen: (a) Zentrales IdP-Discovery: Eine Webseite mit einheitlichem Erscheinungsbild. Vorteil: Die Auswahl eines IdPs wird für alle Service Provider verwendet. (b) Embedded IdP-Discovery: Vorteil: Ein vom SP integrierter Dienst, der vom Erscheinungsbild an die Anwendung angepasst werden kann. Nachteil: Die Auswahl muss für jeden SP wiederholt werden.
+| SAML | Metadaten | Daten von Entities, bestehend aus einem oder mehreren EntityDescriptor Element(en).
+| SAML | Metadata Aggregator | Service, das Metadaten der Entities prüft und in ein signiertes XML-Dokument zusammenfasst.
+| SAML | Metadata Feed | URL, an dem das vom Metadata Aggregator signiertes XML-Dokument publiziert wird.
+| 1.25 | Principal | Principals repräsentieren Betroffene oder deren Geräte oder Services, wenn sie bei einem Identity Provider (z.B. für die Durchführung von Transaktionen, Zugriff auf Datenanwendungen und Kommunikation) registriert und berechtigt sind.
+| 1.29 | Service Provider | Service Provider bezeichnet eine Entität, die eine Ressource betreibt, auf die er entsprechend einer Zugriffspolicy einem Principal Zugriff gewährt. Anmerkung 1: Im Kontext von SAML ist ein SP die Komponente der Web-Anwendung, die eine SAML Assertion verlangt und prüft bevor ein Request von der Anwendung verarbeitet wird.
+| 1.30 | Sicherheitsklasse | Eine Sicherheitsklasse (Level of Assurance) ist eine Bezeichnung für eine Sicherheitsrichtlinie, mit der ein Benutzer (Principal) identifiziert wird. Sicherheitsklassen sind hierarchisch konzipiert, d.h. dass etwa die Anforderungen der Sicherheitsklasse 2 vollständig in den Anforderungen der Klasse 3 enthalten sind. Die Übermittlung der Sicherheitsklasse vom IdP an den SP wird im Dokument „WPV Attribut Profile“ beschrieben.
+|===

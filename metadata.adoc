@@ -1,0 +1,21 @@
+= Metadaten
+
+Metadaten werden verwendet, um die Konfiguration von IDPs und SPs in einer vertrauenswürdigen Weise
+zu kommunizieren. Der Austausch erfolgt über eine zentrale Stelle, den Metadaten Aggregator, der
+vom Federation Operator betrieben wird. Der Federation Operator folgt Regeln über die Registrierung
+und signiert die gesammelten Metadaten mit seinem Signaturschlüssel.
+
+Der Austausch der Metadaten erfolgt in folgendem Prozess:
+
+* Jeder Betreiber einer Entity meldet den EntityDescriptor an den Federation Operator den
+  entsprechenden EntityDescriptor.
+* Der Federation Operator prüft die Daten und gibt sie, wenn OK, an den Metadata Aggregator weiter.
+* Der Metadata Aggregator erstellt ein signiertes XML Dokument aus allen gültigen EntityDescriptoren,
+  die dann am Metadata Feed veröffentlicht werden.
+* Jede teilnehmende Entity liest regelmäßig (z.B stündlich oder öfter) die Metadaten ein, und macht dabei
+  folgende Verarbeitungsschritte:
+  ** Prüfung der Signatur
+  ** Prüfung des Signaturschlüssels
+  ** Filterung der Entities (Blacklist oder Whitelist - das ist einer Entscheidung der Entity)
+  ** Aktualisierung der Metadaten im laufenden Betrieb, wenn möglich vollautomatisch
+
