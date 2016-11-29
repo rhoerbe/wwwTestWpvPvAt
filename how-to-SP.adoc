@@ -1,4 +1,5 @@
 = Wirtschaftsportalverbund (WPV) Testföderation
+
 == Einbinden eines Service Providers
 
 zur Testfederation erfolgt mittels folgender Schritte:
@@ -34,6 +35,11 @@ zur Testfederation erfolgt mittels folgender Schritte:
   (https://mdx.text.wpv.portalverbund.at) und unter dem EntityDescriptor (als URL) veröffentlichen.
 * Einfacher Test eines SP-initiated Logins mit idp5.test.wpv.portalverbund.at. Anmeldung mit
   test@hanstest.at /test.
+
+== Häufige Fehler
+
+=== Metadata direkt zwischen IDP und SP austauschen
+
 
 
 link:index.html[Home]

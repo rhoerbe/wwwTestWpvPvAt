@@ -1,4 +1,5 @@
-= Wirtschaftsportalverbund (WPV) Testföderation (Home)
+= Wirtschaftsportalverbund (WPV) Testföderation
+ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 
 .Zweck
 Zweck der Testföderation ist die Interoperabilität und Konformität von SPs und (sekundär auch) IdPs
@@ -6,6 +7,8 @@ zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit 
 können, Konfigurationsprobleme erkannt werden bevor eine Instanz in den Produktionsbetrieb
 eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
 
+link:begriffe{outfilesuffix}[Begriffsdefinitionen]
+link:metadata{outfilesuffix}[Erklärung Metadaten]
 
 .Testmöglichkeiten
 
@@ -19,7 +22,7 @@ eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
   ** Einfacher Funktionstest mit den Test-IDP
 
 .How-To
-link:how-to-SP.html[SP zur Testföderation hinzufügen]
+link:how-to-SP{outfilesuffix}[SP zur Testföderation hinzufügen]
 
 
 .Dienste
@@ -31,13 +34,13 @@ link:how-to-SP.html[SP zur Testföderation hinzufügen]
 |SP1 Echo-Service mit fix eingestelltem IdP | https://sp1.test.wpv.portalverbund.at/
 |SP2 Echo-Service mit zentralem IdP Discovery Service | https://sp2.test.wpv.portalverbund.at:4443/
 |SP3 Echo-Service mit eingebetteten IdP Discovery Service | https://sp3.test.wpv.portalverbund.at/
-|Test IdP | https://idp1.test.wpv.portalverbund.at/idp/profile/Status
+|Test IdP | https://idp1.test.wpv.portalverbund.at/idp/status
 |Log Viewer | https://weblog.test.wpv.portalverbund.at/
 |====================
 
 .Metadaten-Feed
 
-Die Metadaten sind regelmäßig (im Produktionsbetrieb z.B. stündlich doer täglich) vom 
+Die Metadaten sind regelmäßig (im Produktionsbetrieb z.B. stündlich oder täglich) vom
 Feed zu laden. Dann ist die Signatur zu prüfen und der IDP oder SP bei Änderungen zu 
 aktualisieren. Die Metadaten sind mit folgendem Zertifikat signiert:
 metadata_crt.pem
