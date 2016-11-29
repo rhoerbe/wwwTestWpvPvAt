@@ -1,3 +1,10 @@
+---
+layout: page
+title: Begriffe
+permalink: /terms/
+position: 2
+---
+
 = WPV Begriffe
 
 Definitionen ausgewählter Begriffe aus dem WPV Rulebook und aus der SAML Spezifikation.

@@ -1,3 +1,9 @@
+---
+layout: page
+title: Home
+position: 1
+---
+
 = Wirtschaftsportalverbund (WPV) Testföderation
 ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 

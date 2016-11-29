@@ -1,3 +1,10 @@
+---
+layout: page
+title: Metadata
+permalink: /metadata/
+position: 3
+---
+
 = Metadaten
 
 Metadaten werden verwendet, um die Konfiguration von IDPs und SPs in einer vertrauenswürdigen Weise

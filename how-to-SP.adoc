@@ -1,3 +1,10 @@
+---
+layout: page
+title: How-To SP
+permalink: /howto-sp/
+position: 4
+---
+
 = Wirtschaftsportalverbund (WPV) Testföderation
 
 == Einbinden eines Service Providers
