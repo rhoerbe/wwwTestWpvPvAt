@@ -274,26 +274,30 @@ h6 {
 
 h1 {
   font-size: 36px;
+  color: #aaa;
+  text-align: right;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
+  color: red;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
+  color: red;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 /* Objects
@@ -1166,7 +1170,7 @@ img.emoji {
   padding: 0 !important;
 }
 
-.nav-primary { background-color: #27ae60; }
+.nav-primary { background-color: #0099cc; }
 .omega-nav-menu a { color: #ffffff; }
 .omega-nav-menu a:hover { background-color: #17924b; }
 .omega-nav-menu ul a {background: none repeat scroll 0 0 #1ebe62;}

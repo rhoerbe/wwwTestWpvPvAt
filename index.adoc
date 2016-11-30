@@ -14,19 +14,12 @@ zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit 
 können, Konfigurationsprobleme erkannt werden bevor eine Instanz in den Produktionsbetrieb
 eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
 
-link:begriffe{outfilesuffix}[Begriffsdefinitionen]
-
-link:metadata{outfilesuffix}[Erklärung Metadaten]
-
 == Testmöglichkeiten
 
 * Validieren von Metadaten einer Entity (EntityDescriptor)
 * Einbindung eines IDP oder SP in die Testfederation (= Aufnahme des EntityDescriptors in die Metadaten)
 * IDP (Einbindung in das Discovery Service; Funktionstest mit dem Echoservice)
 * SP (Verwendung des zentralen IDP Discovery Service; Funktionstest mit den Test-IDPs)
-
-.How-To
-link:how-to-SP{outfilesuffix}[SP zur Testföderation hinzufügen]
 
 
 == Dienste
@@ -62,5 +55,5 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 </li><li>
 <a href="files/WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
 </li></ul>
-<img src="images/logo.png" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
+<img src="images/logo.png" alt="Logo" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
 ++++

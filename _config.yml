@@ -3,8 +3,8 @@ title: WPV Testföderation
 
 email: office@identinetics.com
 description: Wirtschaftsportalverbund (WPV) Testföderation
-baseurl: "." # the subpath of your site, e.g. /blog
-url: "https://identinetics.github.io/wwwTestWpvPvAt/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.test.wpv.portalverbund.at" # the base url for your site
 
 exclude:
 exclude:
