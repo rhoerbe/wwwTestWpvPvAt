@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Metadaten melden</title>
+  <title>Konzepte</title>
   <meta name="description" content="Wirtschaftsportalverbund (WPV) Testföderation">
 
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="canonical" href="https://www.test.wpv.portalverbund.at/./metadataupload.html">
+  <link rel="canonical" href="https://www.test.wpv.portalverbund.at/./konzepte.html">
   <link rel="alternate" type="application/rss+xml" title="WPV Testföderation" href="https://www.test.wpv.portalverbund.at/./feed.xml">
 </head>
 
@@ -55,56 +55,64 @@
       <div class="wrap">
         <main class="content">
   <header class="post-header">
-    <h1 class="post-title">Metadaten melden</h1>
+    <h1 class="post-title">Konzepte</h1>
   </header>
 
   <article class="post">
     <div class="entry-wrap">
       <div class="post-content">
-        <div class="paragraph">
-<p>Metadaten müssen vertrauenswürdig an den Aggregator übermittelt werden. Dieses Dokument
-definiert die dafür vorgesehenen Przesse.</p>
-</div>
-<div class="sect1">
-<h2 id="testföderation_staging_entwicklung">Testföderation (Staging: Entwicklung)</h2>
+        <div class="sect1">
+<h2 id="föderation">Föderation</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Metadaten, die XML-konform sind und mit dem Metadatenvalidator (WPV-Profil) geprüft wurden,
-werden per EMail an <a href="mailto:fo@wpv.portalverbund.at">fo@wpv.portalverbund.at</a> gesendet.</p>
-</div>
+
 </div>
 </div>
 <div class="sect1">
-<h2 id="testföderation_staging_qss_und_produktion">Testföderation (Staging: QSS und Produktion)</h2>
+<h2 id="metadaten">Metadaten</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die Übermittlung der Metadaten erfolgt wie in der Testumgebung, zusätzlich gelten für
-QSS und Produktion noch weitere Sicherheitsprozeduren:</p>
+<p>Metadaten werden verwendet, um die Konfiguration von IDPs und SPs in einer vertrauenswürdigen Weise
+zu kommunizieren. Der Austausch erfolgt über eine zentrale Stelle, den Metadaten Aggregator, der
+vom Federation Operator betrieben wird. Der Federation Operator folgt Regeln über die Registrierung
+und signiert die gesammelten Metadaten mit seinem Signaturschlüssel.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Die Metadaten werden nur von persönlich bekannten oder schriftlich autorisierten
-Personen entgegen genommen.</p>
-</li>
-<li>
-<p>Für die elektronische Übertragung sind die Daten zu signieren oder
-gleichwertig zu sichern. Dafür stehen folgende Alternativen zur Verfügung:</p>
+<div class="paragraph">
+<p>Der Austausch der Metadaten erfolgt in folgendem Prozess:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>XADES Signatur mit der Bürgerkarte (nur mit Karte, keine Handysignature; Client: <a href="http://github.com/identinetics/pvzdlivecd" class="bare">http://github.com/identinetics/pvzdlivecd</a>)</p>
+<p>Jeder Betreiber einer Entity meldet den EntityDescriptor an den Federation Operator den
+entsprechenden EntityDescriptor.</p>
 </li>
 <li>
-<p>MD5 oder SHA1 Hash von der Datei erzeugen und diesen telefonisch oder per SMS übermitteln</p>
+<p>Der Federation Operator prüft die Daten und gibt sie, wenn OK, an den Metadata Aggregator weiter.</p>
 </li>
 <li>
-<p>MD5 oder SHA1 Hash ausgedruckt bei einem Meeting persönlich übergeben.</p>
+<p>Der Metadata Aggregator erstellt ein signiertes XML Dokument aus allen gültigen EntityDescriptoren,
+die dann am Metadata Feed veröffentlicht werden.</p>
+</li>
+<li>
+<p>Jede teilnehmende Entity liest regelmäßig (z.B stündlich oder öfter) die Metadaten ein, und macht dabei
+folgende Verarbeitungsschritte:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Prüfung der Signatur</p>
+</li>
+<li>
+<p>Prüfung des Signaturschlüssels</p>
+</li>
+<li>
+<p>Filterung der Entities (Blacklist oder Whitelist - das ist einer Entscheidung der Entity)</p>
+</li>
+<li>
+<p>Aktualisierung der Metadaten im laufenden Betrieb, wenn möglich vollautomatisch</p>
 </li>
 </ul>
 </div>
 </li>
-</ol>
+</ul>
 </div>
 </div>
 </div>
