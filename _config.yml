@@ -1,0 +1,32 @@
+# Site title and subtitle. This is used in _includes/header.html
+title: WPV Testföderation
+
+email: office@identinetics.com
+description: Wirtschaftsportalverbund (WPV) Testföderation
+baseurl: "." # the subpath of your site, e.g. /blog
+url: "https://identinetics.github.io/wwwTestWpvPvAt/" # the base hostname & protocol for your site
+
+exclude:
+exclude:
+  - README.adoc
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+
+# Build settings
+asciidoc:
+  processor: asciidoctor
+  ext: asciidoc,adoc
+  template_dir: _templates
+
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font
+
+gems:
+  - jekyll-asciidoc
+

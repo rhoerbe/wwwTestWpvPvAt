@@ -5,38 +5,40 @@ position: 1
 ---
 
 = Wirtschaftsportalverbund (WPV) Testföderation
+:showtitle:
+:page-shortname: home
+:page-permalink: index.html
+:page-title: Home
+:page-description: Wirtschaftsportalverbund Testföderation (Home)
 ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 
-.Zweck
+== Zweck
 Zweck der Testföderation ist die Interoperabilität und Konformität von SPs und (sekundär auch) IdPs
 zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit PVP2 getestet werden
 können, Konfigurationsprobleme erkannt werden bevor eine Instanz in den Produktionsbetrieb
 eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
 
 link:begriffe{outfilesuffix}[Begriffsdefinitionen]
+
 link:metadata{outfilesuffix}[Erklärung Metadaten]
 
-.Testmöglichkeiten
+== Testmöglichkeiten
 
 * Erstellen und validieren von Metadaten
 * Einbindung eines IDP oder SP in die Testfederation (= Aufnahme des EntityDescriptors in die Metadaten)
-* IDPs
-  ** Aufnahme in das IDP Discovery Service (implizit über die Metadaten)
-  ** Einfacher Funktionstest mit dem Echoservice
-* SPs
-  ** Verwendung des zentralen IDP Discovery Service
-  ** Einfacher Funktionstest mit den Test-IDP
+* IDP (Einbindung in das Discovery Service; Funktionstest mit dem Echoservice)
+* SP (Verwendung des zentralen IDP Discovery Service; Funktionstest mit den Test-IDPs)
 
 .How-To
 link:how-to-SP{outfilesuffix}[SP zur Testföderation hinzufügen]
 
 
-.Dienste
-
+== Dienste
+[width="100%", cols="5,12"]
 |====================
 |Metadatenverwaltung | link:metadataupload.html[Metadaten melden oder aktualisieren]
 |Metadatenvalidierung | http://mdval.test.portalverbund.at/
-|Metadatenpublikation |http://mdfeed.test.wpv.portalverbund.at/
+|Metadaten Feed |http://mdfeed.test.wpv.portalverbund.at/
 |SP1 Echo-Service mit fix eingestelltem IdP | https://sp1.test.wpv.portalverbund.at/
 |SP2 Echo-Service mit zentralem IdP Discovery Service | https://sp2.test.wpv.portalverbund.at:4443/
 |SP3 Echo-Service mit eingebetteten IdP Discovery Service | https://sp3.test.wpv.portalverbund.at/
@@ -44,7 +46,7 @@ link:how-to-SP{outfilesuffix}[SP zur Testföderation hinzufügen]
 |Log Viewer | https://weblog.test.wpv.portalverbund.at/
 |====================
 
-.Metadaten-Feed
+== Metadaten-Feed
 
 Die Metadaten sind regelmäßig (im Produktionsbetrieb z.B. stündlich oder täglich) vom
 Feed zu laden. Dann ist die Signatur zu prüfen und der IDP oder SP bei Änderungen zu 
@@ -53,7 +55,7 @@ metadata_crt.pem
 link:files/metadata_crt.pem[MD Signaturzertifikat]
 
 
-.Referenzen
+== Referenzen
 Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 
 ++++

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: How-To SP
-permalink: /howto-sp/
 position: 4
 ---
 

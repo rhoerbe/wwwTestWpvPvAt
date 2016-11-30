@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Begriffe
-permalink: /terms/
 position: 2
 ---
 
