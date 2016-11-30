@@ -803,13 +803,16 @@ h6 {
   padding: 0; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  color: #aaa; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  color: red; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  color: red; }
 
 h4 {
   font-size: 20px; }
