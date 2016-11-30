@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Konzepte</title>
+  <meta name="description" content="Wirtschaftsportalverbund (WPV) Testföderation">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="canonical" href="https://identinetics.github.io/wwwTestWpvPvAt/./metadata.html">
+  <link rel="alternate" type="application/rss+xml" title="WPV Testföderation" href="https://identinetics.github.io/wwwTestWpvPvAt/./feed.xml">
+</head>
+
+
+  <body>
+
+    
+<nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <div class="wrap"><a href="#" id="menu-icon" class="menu-icon"><span></span></a>
+        <ul id="menu-menu" class="menu omega-nav-menu menu-primary">
+            
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="./css/main.css"></a></li>
+                
+                  <!-- yes, -->
+            
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="./">Home</a></li>
+                
+                  <!-- yes, 1-->
+            
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="./begriffe.html">Begriffe</a></li>
+                
+                  <!-- yes, 2-->
+            
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="./how-to-SP.html">HowTo SP</a></li>
+                
+                  <!-- yes, 3-->
+            
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="./metadataupload.html">Metadaten melden</a></li>
+                
+                  <!-- yes, 4-->
+            
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="./metadata.html">Konzepte</a></li>
+                
+                  <!-- yes, 5-->
+            
+        </ul>
+    </div>
+</nav>
+
+
+    <div class="site-inner">
+      <div class="wrap">
+        <main class="content">
+  <header class="post-header">
+    <h1 class="post-title">Konzepte</h1>
+  </header>
+
+  <article class="post">
+    <div class="entry-wrap">
+      <div class="post-content">
+        <div class="sect1">
+<h2 id="föderation">Föderation</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="metadaten">Metadaten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Metadaten werden verwendet, um die Konfiguration von IDPs und SPs in einer vertrauenswürdigen Weise
+zu kommunizieren. Der Austausch erfolgt über eine zentrale Stelle, den Metadaten Aggregator, der
+vom Federation Operator betrieben wird. Der Federation Operator folgt Regeln über die Registrierung
+und signiert die gesammelten Metadaten mit seinem Signaturschlüssel.</p>
+</div>
+<div class="paragraph">
+<p>Der Austausch der Metadaten erfolgt in folgendem Prozess:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jeder Betreiber einer Entity meldet den EntityDescriptor an den Federation Operator den
+entsprechenden EntityDescriptor.</p>
+</li>
+<li>
+<p>Der Federation Operator prüft die Daten und gibt sie, wenn OK, an den Metadata Aggregator weiter.</p>
+</li>
+<li>
+<p>Der Metadata Aggregator erstellt ein signiertes XML Dokument aus allen gültigen EntityDescriptoren,
+die dann am Metadata Feed veröffentlicht werden.</p>
+</li>
+<li>
+<p>Jede teilnehmende Entity liest regelmäßig (z.B stündlich oder öfter) die Metadaten ein, und macht dabei
+folgende Verarbeitungsschritte:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Prüfung der Signatur</p>
+</li>
+<li>
+<p>Prüfung des Signaturschlüssels</p>
+</li>
+<li>
+<p>Filterung der Entities (Blacklist oder Whitelist - das ist einer Entscheidung der Entity)</p>
+</li>
+<li>
+<p>Aktualisierung der Metadaten im laufenden Betrieb, wenn möglich vollautomatisch</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </article>
+</main>
+
+      </div>
+    </div>
+
+    <footer id="footer" class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+    <div class="wrap">
+        <div class="footer-content footer-insert">
+            <p class="copyright">Copyright © 2016 <a class="site-link" href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html" rel="home">AUSTRIAPRO</a></p>
+            <p class="credit"></p>
+        </div>
+    </div>
+</footer>
+
+  </body>
+
+</html>
