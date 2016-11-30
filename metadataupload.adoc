@@ -1,4 +1,10 @@
-= Wirtschaftsportalverbund (WPV): Meldung von Metadaten
+---
+position: 4
+---
+:showtitle:
+:page-shortname: MD-upload
+:page-title: Metadaten melden
+:page-description:  Wirtschaftsportalverbund (WPV): Meldung von Metadaten
 
 Metadaten müssen vertrauenswürdig an den Aggregator übermittelt werden. Dieses Dokument
 definiert die dafür vorgesehenen Przesse.

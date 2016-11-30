@@ -8,9 +8,12 @@ url: "https://identinetics.github.io/wwwTestWpvPvAt/" # the base hostname & prot
 
 exclude:
 exclude:
+  - .idea/
+  - .gitignore
   - README.adoc
   - Gemfile
   - Gemfile.lock
+  - Makefile
   - Rakefile
 
 # Build settings
@@ -30,3 +33,13 @@ asciidoctor:
 gems:
   - jekyll-asciidoc
 
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      use_jumbotron: "no"
+      show_on_menu: "yes"

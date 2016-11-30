@@ -1,10 +1,11 @@
 ---
-layout: page
-title: How-To SP
-position: 4
+position: 5
 ---
-
-= Wirtschaftsportalverbund (WPV) Testföderation
+:showtitle:
+:page-shortname: HowTo-SP
+:page-title: HowTo SP
+:page-position: 3
+:page-description: Wirtschaftsportalverbund Testföderation (Home)
 
 == Einbinden eines Service Providers
 
@@ -44,7 +45,16 @@ zur Testfederation erfolgt mittels folgender Schritte:
 
 == Häufige Fehler
 
-=== Metadata direkt zwischen IDP und SP austauschen
+=== Austausch der Metadaten direkt zwischen IDP und SP
+
+Die Registrierung und Aktualisierung von Metadaten unterliegt einer Federation Policy, die vom Federaton
+Operator durchgesesetzt wird. Daher dürfen Metadaten nicht direkt zwischen Entities ausgetauscht werden.
+
+=== Metadata stimmen nicht mit der lokalen Konfiguration überein
+
+Die Metadaten werden bei den meisten Produkten von der Entity automatisch erstellt und dann manuell
+ergänzt. Änderungen in den Metadaten, etwa geänderte URLs müssen auch in die lokale Konfiguration
+eingepflegt werden.
 
 
 

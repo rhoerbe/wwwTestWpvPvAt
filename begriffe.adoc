@@ -1,10 +1,12 @@
 ---
-layout: page
-title: Begriffe
 position: 2
 ---
 
-= WPV Begriffe
+:showtitle:
+:page-shortname: Begriffe
+:page-title: Begriffe
+:page-description: Wirtschaftsportalverbund Testföderation (Begriffe)
+ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 
 Definitionen ausgewählter Begriffe aus dem WPV Rulebook und aus der SAML Spezifikation.
 

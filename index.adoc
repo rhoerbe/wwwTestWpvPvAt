@@ -1,13 +1,9 @@
 ---
-layout: page
-title: Home
 position: 1
 ---
 
-= Wirtschaftsportalverbund (WPV) Testföderation
 :showtitle:
-:page-shortname: home
-:page-permalink: index.html
+:page-shortname: index
 :page-title: Home
 :page-description: Wirtschaftsportalverbund Testföderation (Home)
 ifdef::env-github,env-browser[:outfilesuffix: .adoc]
@@ -24,7 +20,7 @@ link:metadata{outfilesuffix}[Erklärung Metadaten]
 
 == Testmöglichkeiten
 
-* Erstellen und validieren von Metadaten
+* Validieren von Metadaten einer Entity (EntityDescriptor)
 * Einbindung eines IDP oder SP in die Testfederation (= Aufnahme des EntityDescriptors in die Metadaten)
 * IDP (Einbindung in das Discovery Service; Funktionstest mit dem Echoservice)
 * SP (Verwendung des zentralen IDP Discovery Service; Funktionstest mit den Test-IDPs)

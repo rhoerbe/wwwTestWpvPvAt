@@ -1,12 +1,11 @@
-{% assign pages = site.pages | sort:"position"  %}
+{% assign pages = site.pages | sort:'position' %}
 <nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
     <div class="wrap"><a href="#" id="menu-icon" class="menu-icon"><span></span></a>
         <ul id="menu-menu" class="menu omega-nav-menu menu-primary">
             {% for page in pages %}
-                {% if page.show_on_menu == 'yes' %}
                   <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-28 current_page_item"><a href="{{ page.url | prepend: site.baseurl}}">{{page.title}}</a></li>
-
-                {% endif %}
+                {% if page.show_on_menu == 'yes' %}{% endif %}
+                  <!-- {{ page.show_on_menu}}, {{ page.position}}-->
             {% endfor %}
         </ul>
     </div>
