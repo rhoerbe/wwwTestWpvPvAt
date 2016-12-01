@@ -688,8 +688,7 @@ a:focus {
 p {
   margin: 0 0 6px;
   padding: 0;
-  whitespace: pre-line;
-  word-break: break-all; }
+  whitespace: pre-line; }
 
 strong {
   font-weight: 700; }
@@ -1537,6 +1536,9 @@ img.emoji {
 
 .omega-nav-menu ul a:hover {
   background: none repeat scroll 0 0 #17924b; }
+
+.word-break {
+  word-break: break-all; }
 
 a {
   color: #337ab7; }
