@@ -62,9 +62,32 @@
     <div class="entry-wrap">
       <div class="post-content">
         <div class="sect1">
-<h2 id="föderation">Föderation</h2>
+<h2 id="föderation_technische_umsetzung">Föderation - technische Umsetzung</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>In der WPV-Föderation werden IdPs und SPs mittels SAML WebSSO miteinander verbunden, sodass SPs das
+Benutzerlogin an einen oder mehrere IDPs delegieren können. Die Konfiguration der externen Entitäten
+erfolgt nur über das zentrale Metadatenservice. Die Zusammenschaltung hat mehrere Stufen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Mit dem Abschluss des Vertrags eines IdP oder SP mit dem Federation Operator können die Metadaten
+der jeweiligen Entity dem Federation Operator gemeldet werden, worauf sie im Metadata Feed der
+Federation veröffentlicht werden.</p>
+</li>
+<li>
+<p>Für die konkrete Nutzung eines IdP mit einem SP ist eine Freischaltung erforderlich. Das kann
+spezifisch pro IdP, generell für alle IdPs, oder für eine Kategorie von IdPs erfolgen.</p>
+</li>
+<li>
+<p>Für die konkrete Nutzung eines SP mit einem IdP ist eine Freischaltung erforderlich. Das umfasst
+erstens die Berechtigung des SP den IdP überhaupt zu nutzten, und zweitens den Umfang der beim
+Login zu übermittelnden Attribute. Die zu übermittelnden Attribute werden im "WPV-Attribute Profil"
+definiert und über eine EntitiyCategory in den Metdaten übermittelt.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 <div class="sect1">
