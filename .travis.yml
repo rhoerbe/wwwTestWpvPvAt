@@ -7,7 +7,7 @@ services:
   - docker
 
 script:
-  - docker run -it --rm -v $PWD:/var/data:Z r2h2/jekyll-adoc
+  - docker run -it --rm -v $PWD:/var/data:Z rhoerbe/jekyll-adoc
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
