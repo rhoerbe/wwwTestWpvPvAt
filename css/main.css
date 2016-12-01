@@ -440,6 +440,7 @@ pre {
   .highlight .il {
     color: #099; }
 
+/* Adapted for jekyll-asciidoc   r2h2 2016-11-29 */
 /*
 Theme Name: Omega
 Theme URI: https://themehall.com/omega
@@ -688,7 +689,7 @@ a:focus {
 p {
   margin: 0 0 6px;
   padding: 0;
-  whitespace: pre-line; }
+  word-break: break-word; }
 
 strong {
   font-weight: 700; }
