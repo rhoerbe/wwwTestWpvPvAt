@@ -7,7 +7,22 @@ position: 2
 :page-title: Konzepte
 :page-description:  Wirtschaftsportalverbund (WPV): Konzepte
 
-== Föderation
+== Föderation - technische Umsetzung
+
+In der WPV-Föderation werden IdPs und SPs mittels SAML WebSSO miteinander verbunden, sodass SPs das
+Benutzerlogin an einen oder mehrere IDPs delegieren können. Die Konfiguration der externen Entitäten
+erfolgt nur über das zentrale Metadatenservice. Die Zusammenschaltung hat mehrere Stufen:
+
+1. Mit dem Abschluss des Vertrags eines IdP oder SP mit dem Federation Operator können die Metadaten
+   der jeweiligen Entity dem Federation Operator gemeldet werden, worauf sie im Metadata Feed der
+   Federation veröffentlicht werden.
+2. Für die konkrete Nutzung eines IdP ist eine Freischaltung durch den SP erforderlich. Das kann
+   spezifisch pro IdP, generell für alle IdPs, oder für eine Kategorie von IdPs erfolgen.
+3. Für die konkrete Nutzung eines IdP durch einen SP ist auch eine Freischaltung durch den IdP erforderlich. Das umfasst
+   erstens die Berechtigung des SP den IdP überhaupt zu nutzten, und zweitens den Umfang der beim
+   Login zu übermittelnden Attribute. Die zu übermittelnden Attribute werden im "WPV-Attribute Profil"
+   definiert und über eine EntitiyCategory in den Metdaten übermittelt.
+
 
 == Metadaten
 
@@ -29,4 +44,29 @@ Der Austausch der Metadaten erfolgt in folgendem Prozess:
   ** Prüfung des Signaturschlüssels
   ** Filterung der Entities (Blacklist oder Whitelist - das ist einer Entscheidung der Entity)
   ** Aktualisierung der Metadaten im laufenden Betrieb, wenn möglich vollautomatisch
+
+== Häufige Fehler
+
+=== Austausch der Metadaten direkt zwischen IDP und SP
+
+Die Registrierung und Aktualisierung von Metadaten unterliegt einer Federation Policy, die vom Federaton
+Operator durchgesesetzt wird. Daher dürfen Metadaten nicht direkt zwischen Entities ausgetauscht werden.
+
+=== Metadata stimmen nicht mit der lokalen Konfiguration überein
+
+Die Metadaten werden bei den meisten Produkten von der Entity automatisch erstellt und dann manuell
+ergänzt. Änderungen in den Metadaten, etwa geänderte URLs müssen auch in die lokale Konfiguration
+eingepflegt werden.
+
+=== Metadata werden nicht geprüft oder regelmäßig aktualisiert
+
+Bei der ersten Einbindung einer Entitiy fällt es u.U. nicht auf, dass Metdaten eingelesen werden
+ohne die Signatur der Metadaten zu prüfen. Das wäre jedoch ein gravierender Sicherheitsmangel.
+
+Außerdem ist zu prüfen dass am Metadata Feed geänderte Daten auch tatsächlich innerhalb einer
+definierten Periode (z.B. einer Stunde) von der Entity verarbeitet werden.
+
+Die Zertifikate in den Metadaten werden nur als Container für den Public Key der Entities verwendet.
+Der sonstige Inhalt einschließlich CRLs btz. OCSP Sperrungen wird ignoriert, da nicht die PKI, sondern
+die Metadatensignatur als Trust Root definiert ist.
 

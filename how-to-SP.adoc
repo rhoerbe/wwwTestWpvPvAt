@@ -9,7 +9,7 @@ position: 5
 
 == Einbinden eines Service Providers
 
-zur Testfederation erfolgt mittels folgender Schritte:
+in die Testfederation erfolgt mittels folgender Schritte:
 
 * Export der Metadaten des SP. Dabei ist zu prüfen, dass die Metadaten den Anforderungen genügen.
   Die automatisch generierten Metadaten sind fast immer unzureichend. Beispiele für korrekte
@@ -37,25 +37,9 @@ zur Testfederation erfolgt mittels folgender Schritte:
 ** Hostname + Pfad: https://disco.test.wpv.portalverbund.at/role/idp.ds
 ** entityID-Parameter: enthält URL-codierte entityID
 ** Return-Pfad: enthält URL-codierte Rückgabeadresse
-  Beispiel: /role/idp.ds?entityID=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsp.xml&return=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A52889d0c6e0396b95f185a65ea888327cabbc23be0657f92544ee43a98d9ca37
+  +++<span class="word-wrap">Beispiel: /role/idp.ds?entityID=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2Fsp.xml&return=https%3A%2F%2Fecho.test.wpv.portalverbund.at%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A52889d0c6e0396b95f185a65ea888327cabbc23be0657f92544ee43a98d9ca37 </span>+++
 * Zum Abschluss sind die Metadaten der eigenen Entity herunterzuladen
   (https://mdx.text.wpv.portalverbund.at) und unter dem EntityDescriptor (als URL) veröffentlichen.
 * Einfacher Test eines SP-initiated Logins mit idp5.test.wpv.portalverbund.at. Anmeldung mit
   test@hanstest.at /test.
 
-== Häufige Fehler
-
-=== Austausch der Metadaten direkt zwischen IDP und SP
-
-Die Registrierung und Aktualisierung von Metadaten unterliegt einer Federation Policy, die vom Federaton
-Operator durchgesesetzt wird. Daher dürfen Metadaten nicht direkt zwischen Entities ausgetauscht werden.
-
-=== Metadata stimmen nicht mit der lokalen Konfiguration überein
-
-Die Metadaten werden bei den meisten Produkten von der Entity automatisch erstellt und dann manuell
-ergänzt. Änderungen in den Metadaten, etwa geänderte URLs müssen auch in die lokale Konfiguration
-eingepflegt werden.
-
-
-
-link:index.html[Home]

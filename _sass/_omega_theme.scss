@@ -1,3 +1,5 @@
+/* Adapted for jekyll-asciidoc   r2h2 2016-11-29 */
+
 /*
 Theme Name: Omega
 Theme URI: https://themehall.com/omega
@@ -125,8 +127,9 @@ a:focus {
 }
 
 p {
-  margin: 0 0 24px;
+  margin: 0 0 6px;
   padding: 0;
+  word-break: break-word;
 }
 
 strong {
@@ -139,13 +142,13 @@ ol, ul {
 
 ul {
   list-style: disc outside;
-  margin: 0 0 25px 48px;
-  padding: 0;
+  margin: 0 0 0 0;
+  padding-left: 16px;
 }
 
 ol {
   list-style-type: decimal;
-  margin: 0 0 25px 48px;
+  margin: 0 0 0px 12px;
 }
 
 ol ol {
@@ -234,6 +237,7 @@ th,td {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  vertical-align: text-top;
 }
 
 .widget th,
@@ -281,23 +285,25 @@ h1 {
 h2 {
   font-size: 24px;
   color: red;
+  padding-top: 12px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: red;
+  padding-top: 6px;
 }
 
 h4 {
-  font-size: 16px;
-}
-
-h5 {
   font-size: 14px;
 }
 
-h6 {
+h5 {
   font-size: 13px;
+}
+
+h6 {
+  font-size: 12px;
 }
 
 /* Objects
@@ -398,7 +404,8 @@ Structure and Layout
 
 .content {
   float: left;
-  width: 600px;
+  width: inherit;
+  margin: 0 24px 0 24px;
 }
 
 /* Primary Sidebar */
@@ -967,7 +974,7 @@ p.credit {
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 800px) {
 
   .content,
   .sidebar-primary,
@@ -1013,7 +1020,7 @@ Media Queries
   }
 
   .omega-nav-menu a {
-    padding: 20px 16px;
+    padding: 12px 12px;
   }
 
   .omega-nav-menu li.right {
@@ -1152,25 +1159,10 @@ input#subscribe-field {
   padding: 16px !important;
 }
 
-
-/*
-Migrated From Index
--------------------
-*/
-img.wp-smiley,
-img.emoji {
-  display: inline !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 1em !important;
-  width: 1em !important;
-  margin: 0 .07em !important;
-  vertical-align: -0.1em !important;
-  background: none !important;
-  padding: 0 !important;
+.nav-primary {
+  background-color: #0099cc;
+  width: 100%;
 }
-
-.nav-primary { background-color: #0099cc; }
 .omega-nav-menu a { color: #ffffff; }
 .omega-nav-menu a:hover { background-color: #17924b; }
 .omega-nav-menu ul a {background: none repeat scroll 0 0 #1ebe62;}
