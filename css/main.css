@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  color: #000;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -71,7 +71,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #000;
     text-decoration: underline; }
 
 /**
@@ -153,7 +153,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #000;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -698,11 +698,11 @@ ol, ul {
 ul {
   list-style: disc outside;
   margin: 0 0 0 0;
-  padding: 0; }
+  padding-left: 12px; }
 
 ol {
   list-style-type: decimal;
-  margin: 0 0 25px 48px; }
+  margin: 0 0 0px 12px; }
 
 ol ol {
   list-style: upper-roman; }
@@ -1355,7 +1355,7 @@ p.credit {
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 800px) {
   .content,
   .sidebar-primary,
   .wrap,
