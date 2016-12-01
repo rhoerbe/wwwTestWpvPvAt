@@ -686,7 +686,7 @@ a:focus {
   text-decoration: none; }
 
 p {
-  margin: 0 0 24px;
+  margin: 0 0 6px;
   padding: 0; }
 
 strong {
@@ -697,7 +697,7 @@ ol, ul {
 
 ul {
   list-style: disc outside;
-  margin: 0 0 25px 48px;
+  margin: 0 0 0 0;
   padding: 0; }
 
 ol {
@@ -905,7 +905,7 @@ Structure and Layout
 --------------------------------------------- */
 .content {
   float: left;
-  width: 600px; }
+  /* width: 600px; */ }
 
 /* Primary Sidebar */
 .sidebar-primary {
@@ -1393,7 +1393,7 @@ Media Queries
     text-align: center; }
 
   .omega-nav-menu a {
-    padding: 20px 16px; }
+    padding: 12px 12px; }
 
   .omega-nav-menu li.right {
     display: none; }
