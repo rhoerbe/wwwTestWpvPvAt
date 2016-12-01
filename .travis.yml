@@ -1,5 +1,21 @@
 language: ruby
 rvm:
   - 2.2.0
-sudo: false
-script: bundle exec rake deploy
+
+sudo: required
+services:
+  - docker
+
+script:
+  - docker run -it --rm -v $PWD:/var/data:Z r2h2/jekyll-adoc
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    mkdir gh-pages
+    git clone git@github.com:rhoerbe/wwwTestWpvPvAt.git gh-pages
+    cp -pr _site/* gh-pages
+    cd gh-pages
+    git add -A
+    git commit -m 'generated'
+    git push
+    fi
