@@ -908,7 +908,8 @@ Structure and Layout
 --------------------------------------------- */
 .content {
   float: left;
-  /* width: 600px; */ }
+  width: inherit;
+  margin: 0 24px 0 24px; }
 
 /* Primary Sidebar */
 .sidebar-primary {
@@ -1506,24 +1507,9 @@ Plugins Style
 input#subscribe-field {
   padding: 16px !important; }
 
-/*
-Migrated From Index
--------------------
-*/
-img.wp-smiley,
-img.emoji {
-  display: inline !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 1em !important;
-  width: 1em !important;
-  margin: 0 .07em !important;
-  vertical-align: -0.1em !important;
-  background: none !important;
-  padding: 0 !important; }
-
 .nav-primary {
-  background-color: #0099cc; }
+  background-color: #0099cc;
+  width: 100%; }
 
 .omega-nav-menu a {
   color: #ffffff; }
@@ -1536,9 +1522,6 @@ img.emoji {
 
 .omega-nav-menu ul a:hover {
   background: none repeat scroll 0 0 #17924b; }
-
-.word-break {
-  word-break: break-all; }
 
 a {
   color: #337ab7; }
