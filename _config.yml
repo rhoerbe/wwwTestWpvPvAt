@@ -13,6 +13,8 @@ exclude:
   - README.adoc
   - Gemfile
   - Gemfile.lock
+  - git_clone.tcl
+  - git_push.tcl
   - Makefile
   - Rakefile
 

@@ -4,15 +4,26 @@ position: 1
 
 :showtitle:
 :page-shortname: index
-:page-title: Home
-:page-description: Wirtschaftsportalverbund Testföderation (Home)
+:page-title: Wiki
+:page-description: Zugang zur WPV Testföderation
 ifdef::env-github,env-browser[:outfilesuffix: .adoc]
+
+Der nachfolgende Text richtet sich an IT Fachleute mit Kenntnissen im Identitätsmanagement und dient dazu,
+die Durchführung einer Implementierung eines Internetdienstes im Rahmen des Wirtschaftsportalverbundes zu unterstützen.
 
 == Zweck
 Zweck der Testföderation ist die Interoperabilität und Konformität von SPs und (sekundär auch) IdPs
 zu prüfen. Damit soll erreicht werden, dass Produkte auf ihre Konformität mit PVP2 getestet werden
 können, Konfigurationsprobleme erkannt werden bevor eine Instanz in den Produktionsbetrieb
 eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
+
+== Voraussetzungen
+
+Um eine Anwendung einzubinden ist es notwendig, dass diese das SAML WebSSO-Protokoll unterstützt.
+Das im WPV verwendete SAML-Profil ist vom PVP2-S-Profil im Verwaltungsportalverbund der österreichischen Behörden abgeleitet.
+Manche Anwendungen unterstützen das Protokoll nativ, andere benötigen eine zusätzliche Komponente,
+z.B. einen HTTP-Proxy der das WebSSO-Protokoll umsetzt. Eine bewährte Open-Source Lösung ist der Shibboleth-SP mit dem Apache-HTTP.
+Aber es können auch andere Produkte verwendet werden.
 
 == Testmöglichkeiten
 
@@ -27,21 +38,22 @@ eingegliedert wird und Sicherheitsprobleme frühzeitig erkannt werden.
 |====================
 |Metadatenverwaltung | link:metadataupload.html[Metadaten melden oder aktualisieren]
 |Metadatenvalidierung | http://mdval.test.portalverbund.at/
-|Metadaten Feed |http://mdfeed.test.wpv.portalverbund.at/
+|Metadaten Feed |http://mdfeed.test.wpv.portalverbund.at/metadata.xml (link:files/metadata_crt.pem[MD Signaturzertifikat])
 |SP1 Echo-Service mit fix eingestelltem IdP | https://sp1.test.wpv.portalverbund.at/
-|SP2 Echo-Service mit zentralem IdP Discovery Service | https://sp2.test.wpv.portalverbund.at:4443/
+|SP2 Echo-Service mit zentralem IdP Discovery Service | https://sp2.test.wpv.portalverbund.at/
 |SP3 Echo-Service mit eingebetteten IdP Discovery Service | https://sp3.test.wpv.portalverbund.at/
-|Test IdP | https://idp1.test.wpv.portalverbund.at/idp/status
-|Log Viewer | https://weblog.test.wpv.portalverbund.at/
 |====================
+
+// Status display not working - unalbe to disable naxsi
+// |Test IdP | https://idp1.test.wpv.portalverbund.at/idp/status
+// |Log Viewer | https://weblog.test.wpv.portalverbund.at/
 
 == Metadaten-Feed
 
 Die Metadaten sind regelmäßig (im Produktionsbetrieb z.B. stündlich oder täglich) vom
 Feed zu laden. Dann ist die Signatur zu prüfen und der IDP oder SP bei Änderungen zu 
-aktualisieren. Die Metadaten sind mit folgendem Zertifikat signiert:
-metadata_crt.pem
-link:files/metadata_crt.pem[MD Signaturzertifikat]
+aktualisieren. 
+
 
 
 == Referenzen
@@ -49,11 +61,13 @@ Die technischen Protokolle des WPV sind in folgeneden Dokumenten definiert
 
 ++++
 <ul><li>
-<a href="http://reference.e-government.gv.at/fileadmin/user_upload/PVP2-S-Profil_2-1-2_20150601.pdf">PVP V2 S-Profil V2.1.2</a>
+<a href="files/WPV-SAML-Profil_1_0.pdf">WPV SAML Profil</a>
 </li><li>
 <a href="https://www.ref.gv.at/fileadmin/user_upload/PVP2-S-MD_2-1-2_20150601.pdf">PVP2 SAML Metadaten Management Spezifikation V2.1.0</a>
 </li><li>
-<a href="files/WPV-Attribute.pdf">WPV Attribute Standardprofil (Entwurf)</a>
+<a href="http://reference.e-government.gv.at/fileadmin/user_upload/PVP2-S-Profil_2-1-2_20150601.pdf">PVP V2 S-Profil V2.1.2</a>
+</li><li>
+<a href="files/WPV-Attribute-1_4.pdf">WPV Attribute Standardprofil (v1.4)</a>
 </li></ul>
 <img src="images/logo.png" alt="Logo" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
 ++++

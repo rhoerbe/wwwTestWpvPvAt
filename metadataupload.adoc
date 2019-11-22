@@ -7,7 +7,7 @@ position: 4
 :page-description:  Wirtschaftsportalverbund (WPV): Meldung von Metadaten
 
 Metadaten müssen vertrauenswürdig an den Aggregator übermittelt werden. Dieses Dokument
-definiert die dafür vorgesehenen Przesse.
+definiert die dafür vorgesehenen Prozesse.
 
 == Testföderation (Staging: Entwicklung)
 
@@ -22,7 +22,6 @@ QSS und Produktion noch weitere Sicherheitsprozeduren:
 1. Die Metadaten werden nur von persönlich bekannten oder schriftlich autorisierten
 Personen entgegen genommen.
 2. Für die elektronische Übertragung sind die Daten zu signieren oder
-gleichwertig zu sichern. Dafür stehen folgende Alternativen zur Verfügung:
- - XADES Signatur mit der Bürgerkarte (nur mit Karte, keine Handysignature; Client: http://github.com/identinetics/pvzdlivecd)
- - MD5 oder SHA1 Hash von der Datei erzeugen und diesen telefonisch oder per SMS übermitteln
- - MD5 oder SHA1 Hash ausgedruckt bei einem Meeting persönlich übergeben.
+gleichwertig gesichert zu übermitteln.
+ - MD5 Hash von der Datei erzeugen und diesen telefonisch oder per SMS übermitteln
+ - MD5 Hash ausgedruckt bei einem Meeting persönlich übergeben.

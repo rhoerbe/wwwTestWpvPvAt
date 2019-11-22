@@ -1,0 +1,10 @@
+# Static Website Content for www.test.wpv.portalverbund.at
+
+This is the source repository for the web site. The toolchain is as follows:
+
+1. The sources are maintained in the master branch of this repo using asciidoc with jekyll hints.
+2. The build process uses jekyll to build the html. Use the d-jekyll.adoc repo (in Jenkins) to gerenate the image.
+3. Use this repor and Jenkins to build the contents.
+The web contents (in _site/) is committed after the build and pushed to github
+4. The cronjob on nc9 will pull the repo every night; start manually to refresh immediately
+

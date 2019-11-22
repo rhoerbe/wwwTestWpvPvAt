@@ -5,7 +5,7 @@ position: 5
 :page-shortname: HowTo-SP
 :page-title: HowTo SP
 :page-position: 3
-:page-description: Wirtschaftsportalverbund Testföderation (Home)
+:page-description: Wirtschaftsportalverbund Testföderation
 
 == Einbinden eines Service Providers
 
@@ -14,7 +14,7 @@ in die Testfederation erfolgt mittels folgender Schritte:
 * Export der Metadaten des SP. Dabei ist zu prüfen, dass die Metadaten den Anforderungen genügen.
   Die automatisch generierten Metadaten sind fast immer unzureichend. Beispiele für korrekte
   Metadaten sind die Entities für https://mdfeed.test.wpv.portalverbund.at/unsigned/idp1TestWpvPortalverbundAt_idpShibboleth/ed.xml[idp1.test.wpv.portalverbund.at] (IDP) und
-  https://mdfeed.test.wpv.portalverbund.at/unsigned/sp1TestWpvPortalverbundAt_spXml/ed.xml[sp1.test.wpv.portalverbund.at] (SP). Man findes Sie mit der Suchfunktion im MDX-Service.
+  http://mdfeed.test.wpv.portalverbund.at/unsigned/sp1TestWpvPortalverbundAt_spXml/ed.xml[sp1.test.wpv.portalverbund.at] (SP).
   Typische Mängel sind:
   ** entityID ist kein URI (beginnt nicht mit http://, https:// oder urn://)
   ** Fehlende EntitityCategory: Welche Attribute zwischen IDP und SP ausgetauscht werden wird über die EntityCategory angegeben, das ist derzeit 
@@ -27,12 +27,12 @@ in die Testfederation erfolgt mittels folgender Schritte:
   webmaster@wpv.portalverbund.at .
 * Überprüfen ob die Metadaten korrekt im Metadatenfeed erscheinen.
 * Konfigurieren des SP, dass die Metadaten regelmäßig vom MD-Feed der Testfederation bezogen werden
-  (http://md.test.wpv.portalverbund.at/testfed-metadata.xml). Wird das vom Produkt nicht unterstützt,
+  (http://md.test.wpv.portalverbund.at/metadata.xml). Wird das vom Produkt nicht unterstützt,
   so ist mittles Scripts zu realisieren, dass Download, Signaturprüfung und Import automatisch
- erfolgen. (Z.B. FEMMA für ADFS)
-* Eintragen des IdP-Discovery Service in der lokalen SP-Konfiguration. Die Adresse ist
+  erfolgen.
+* Eintragen des IdP-Discovery Service in der lokalen SP-Konfiguration. Die Adresse für das zentrale DS ist
   https://disco.test.wpv.portalverbund.at/role/idp.ds. Achtung! Das Protokoll ist das SAMLDS
-  protokoll, nicht das auf Common Cookies basierende IDP Discovery Profile. Der Aufruf erfolgt über
+  Protokoll, nicht das auf Common Cookies basierende IDP Discovery Profile. Der Aufruf erfolgt über
   einen URL mit folgenden Komponenten:
 ** Hostname + Pfad: https://disco.test.wpv.portalverbund.at/role/idp.ds
 ** entityID-Parameter: enthält URL-codierte entityID
